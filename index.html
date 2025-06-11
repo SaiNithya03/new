@@ -74,3 +74,23 @@ welcome........
    22  cd bin
    23  ./startup.sh
    24  history
+------------------
+ 1  mkdir dev_rep
+    2  cd .ssh/
+    3  ssh-ketgen
+    4  ssh-keygen
+    5  ls -a
+    6  cat id_rsa.pub
+    7  cd ..
+    8  cd dev_server
+    9  cd dev_rep
+   10  vim index.html
+   11  yum install git -y
+   12  git add index.html
+   13  git init
+   14  git add index.html
+   15  git commit -m "first commit"
+   16  git branch -M main
+   17  git remote add origin git@github.com:SaiNithya03/new.git
+   18  git push -u origin main
+   19  history
