@@ -94,3 +94,26 @@ welcome........
    17  git remote add origin git@github.com:SaiNithya03/new.git
    18  git push -u origin main
    19  history
+------------------
+For Jenkins set up:
+-------------------
+ 1  hostname
+    2  ip a s
+    3  free -h
+    4  cat /proc/cpu
+    5  cat /proc/cpuinfo
+    6  df -h
+    7  cat /etc/os-release
+    8  yum update -y
+    9   wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+   10  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+   11  yum upgrade
+   12  yum install fontconfig java-21-openjdk
+   13  yum install java-17-amazon-corretto -y
+   14  yum install jenkins -y
+   15  systemctl start jenkins
+   16  systemctl enable jenkins
+   17  systemctl status jenkins
+   18  rpmquery jenkins
+   19  history
+
