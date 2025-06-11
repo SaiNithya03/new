@@ -1,1 +1,76 @@
 welcome........
+1  mkdir project-x
+    2  cd project-x
+    3  yum install git -y
+    4  git clone https://github.com/AryanS1508/Aryan_10743412.git
+    5  ll
+    6  cd Aryan_10743412/
+    7  ll
+    8  cd ..
+    9  git init
+   10  ls
+   11  ls -a
+   12  git branch -M main
+   13  git remote add origin git@github.com:SaiNithya03/tomcatProject.git
+   14  git push -u origin main
+   15  git remote remove origin
+   16  git remote add origin git@github.com:SaiNithya03/tomcatProject.git
+   17  cd Aryan_10743412
+   18  cd ..
+   19  ssh-keygen
+   20  cd .ssh/
+   21  cd ..
+   22  ls
+   23  ls -a
+   24  cd .ssh/
+   25  ls
+   26  cat  id_rsa.pub
+   27  cd
+   28  cd project-x/
+   29  cd Aryan_10743412
+   30  git remote remove origin
+   31  git remote add origin git@github.com:SaiNithya03/tomcatProject.git
+   32  git push -u origin
+   33  git push -u origin main
+
+-------------------------------------------------------------------------------------
+ 1  yum update –y
+    2  wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    3  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+    4  yum upgrade
+    5  yum install java-17-amazon-corretto -y
+    6  yum install jenkins -y
+    7  systemctl enable jenkins
+    8  systemctl start jenkins
+    9   systemctl status jenkins
+   10  cat /var/lib/jenkins/secrets/initialAdminPassword
+   11  yum install git -y
+   12  cd /var/lib/jenkins/workspace/tomcat
+   13  ll
+   14  history
+----------------------------------------------------------------------------------------
+
+ 1  yum install java*
+    2  yum install wget
+    3  wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.106/bin/apache-tomcat-9.0.106.tar.gz.sha512
+    4  ll
+    5  tar -zvxf apache-tomcat-9.0.106.tar.gz.sha512
+    6  ll
+    7  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.106/bin/apache-tomcat-9.0.106.tar.gz
+    8  ll
+    9  tar -zvxf  apache-tomcat-9.0.106.tar.gz
+   10  cd apache-tomcat-9.0.106/
+   11  cd bin
+   12  chmod +x startup.sh
+   13  chmod +x shutdown.sh
+   14  cd ..
+   15  find -name context.xml
+   16  vim ./webapps/examples/META-INF/context.xml
+   17  vim ./webapps/host-manager/META-INF/context.xml
+   18  vim ./webapps/manager/META-INF/context.xml
+   19  cd conf
+   20  vim tomcat-users.xml
+   21  cd ..
+   22  cd bin
+   23  ./startup.sh
+   24  history
