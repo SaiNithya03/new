@@ -15,6 +15,20 @@ passwd harry same for natasha and sarah
 usermod -G sysadm harry
 usermod -G sysadm natasha
 usermod -s /sbin/nologin sarah
+
+___________________
+usermod -a -G (groupname) username
+-------------------
+lsblk
+mkdir /data
+mkfs.ext4 /dev/xvdb
+mount /dev/xvdb /data/
+df -h
+resize2fs /dev/xvdb
+df -h
+xfs_growfs -d
+xfs_growfs -d /dev/xvdal
+
 ####################################################################################################################
 ques.create a collabrative directory /shared/sysadm with th following characteristics:
 -Group owernship of /shared/sysadm is sysadm
