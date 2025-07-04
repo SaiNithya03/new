@@ -282,3 +282,33 @@ jenkins_on_aws
 
 :: You can check the status of the Jenkins service using the command
 --- systemctl status jenkins
+
+
+
+    -----------------------------------------
+    [root@docker ~]# history
+    1  yum install nginx -y
+    2  systemctl start nginx.service
+    3  systemctl status nginx.service
+    4  yum install docker*
+    5  systemctl enable docker
+    6  systemctl status docker
+    7  systemctl start docker
+    8  docker pull nginx:stable-perl
+    9  docker images
+   10  docker run -itd --name myserver -p 8080:8080 nginx /bin/bash
+   11  docker ps -a
+   12  docker attach c06d40765b6d
+   13   docker attach c06d40765b6d
+   14  curl http://localhost
+   15  history
+[root@docker ~]# docker attach c06d40765b6d
+root@c06d40765b6d:/# history
+    1  curl http://localhost
+    2  apt update -y
+    3  apt install nginx
+    4  service status nginx
+    5  service nginx start
+    6  service nginx status
+    7  history
+root@c06d40765b6d:/#
