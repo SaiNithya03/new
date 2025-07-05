@@ -46,3 +46,44 @@ or you can make cluster in this way
 
  When You want to delete cluster
  eksctl delete cluster --name my-cluster
+###################################################
+   11  kubectl get nodes
+   12  mkdir /project-x
+   13  cd /project-x
+   14  vim pods.yaml
+   15  kubectl apply -f pods.yaml
+   16  kubectl get pods
+   17  vim deployment.yaml
+   18  kubectl apply -f deployment.yaml
+   19  kubectl get deployment
+   20  kubectl get rs
+   21  kubectl get pods
+   22  kubectl get svc
+   23  vim service.yaml
+   24  kubectl get pods
+   25  vim service.yaml
+   26  kubectl apply -f service.yaml
+   27  kubectl get pods
+   28  kubectl get nodes
+   29  kubectl get svc
+------------------------------------------------------------------------
+service.yaml 
+------------
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  labels:
+    app: nginx
+spec:
+  selector:
+    app: nginx
+ 
+  ports:
+    - port: 80
+      targetPort: 80
+ 
+  type: LoadBalancer
+-----------------------------------------
+
+
